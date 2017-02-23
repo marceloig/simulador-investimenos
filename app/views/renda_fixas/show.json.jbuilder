@@ -1,0 +1,1 @@
+json.partial! "renda_fixas/renda_fixa", renda_fixa: @renda_fixa

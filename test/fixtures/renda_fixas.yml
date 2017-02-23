@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: MyString
+  vencimento: 2017-01-03
+  taxa_de_juros: 9.99
+  tipo: MyString
+  imposto_de_renda: 9.99
+  has_imposto_de_renda: false
+  is_imposto_de_renda_fixo: false
+  indice: one
+
+two:
+  titulo: MyString
+  vencimento: 2017-01-03
+  taxa_de_juros: 9.99
+  tipo: MyString
+  imposto_de_renda: 9.99
+  has_imposto_de_renda: false
+  is_imposto_de_renda_fixo: false
+  indice: one
+  
+testePreFixado:
+  titulo: Teste Pre Fixado sem Imposto de Renda
+  vencimento: 2030-02-21
+  taxa_de_juros: 12.0
+  tipo: Teste
+  imposto_de_renda: 0.0
+  has_imposto_de_renda: false
+  is_imposto_de_renda_fixo: false
+  indice: testeIndice
+  
+selic:
+  titulo: Tesouro Selic
+  vencimento: 2030-02-21
+  taxa_de_juros: 0.06
+  tipo: Tesouro
+  imposto_de_renda: 0.0
+  has_imposto_de_renda: true
+  is_imposto_de_renda_fixo: false
+  indice: indiceSelic

@@ -1,0 +1,2 @@
+class IndiceController < ApplicationController
+end

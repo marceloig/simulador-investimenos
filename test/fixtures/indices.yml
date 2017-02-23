@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  indexador: MyString
+  taxa_de_juros: 9.99
+
+two:
+  indexador: MyString
+  taxa_de_juros: 9.99
+  
+testeIndice:
+  indexador: Indice de Teste
+  taxa_de_juros: 10.0
+
+indiceSelic:
+  indexador: Selic
+  taxa_de_juros: 13.0

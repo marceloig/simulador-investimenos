@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Calculos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Valor inicial</th>
+      <th>Valor mensal</th>
+      <th>Data de retirada</th>
+      <th>Renda fixa</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @calculos.each do |calculo| %>
+      <tr>
+        <td><%= calculo.valor_inicial %></td>
+        <td><%= calculo.valor_mensal %></td>
+        <td><%= calculo.data_de_retirada %></td>
+        <td><%= calculo.renda_fixa %></td>
+        <td><%= link_to 'Show', calculo %></td>
+        <td><%= link_to 'Edit', edit_calculo_path(calculo) %></td>
+        <td><%= link_to 'Destroy', calculo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Calculo', new_calculo_path %>

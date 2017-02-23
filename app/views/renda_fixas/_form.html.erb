@@ -1,0 +1,41 @@
+<%= form_for(@renda_fixa) do |f| %>
+  <% if @renda_fixa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@renda_fixa.errors.count, "error") %> prohibited this renda_fixa from being saved:</h2>
+
+      <ul>
+      <% @renda_fixa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titulo %><br>
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :vencimento %><br>
+    <%= f.date_select :vencimento %>
+  </div>
+  <div class="field">
+    <%= f.label :taxa_de_juros %><br>
+    <%= f.text_field :taxa_de_juros %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo %><br>
+    <%= f.text_field :tipo %>
+  </div>
+  <div class="field">
+    <%= f.label :imposto_de_renda %><br>
+    <%= f.text_field :imposto_de_renda %>
+  </div>
+  <div class="field">
+    <%= f.label :is_imposto_de_renda_fixo %><br>
+    <%= f.check_box :is_imposto_de_renda_fixo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

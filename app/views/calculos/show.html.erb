@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Valor inicial:</strong>
+  <%= @calculo.valor_inicial %>
+</p>
+
+<p>
+  <strong>Valor mensal:</strong>
+  <%= @calculo.valor_mensal %>
+</p>
+
+<p>
+  <strong>Data de retirada:</strong>
+  <%= @calculo.data_de_retirada %>
+</p>
+
+<p>
+  <strong>Renda fixa:</strong>
+  <%= @calculo.renda_fixa %>
+</p>
+
+<%= link_to 'Edit', edit_calculo_path(@calculo) %> |
+<%= link_to 'Back', calculos_path %>

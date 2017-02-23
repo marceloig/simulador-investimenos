@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @renda_fixa.titulo %>
+</p>
+
+<p>
+  <strong>Vencimento:</strong>
+  <%= @renda_fixa.vencimento %>
+</p>
+
+<p>
+  <strong>Taxa de juros:</strong>
+  <%= @renda_fixa.taxa_de_juros %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @renda_fixa.tipo %>
+</p>
+
+<p>
+  <strong>Imposto de renda:</strong>
+  <%= @renda_fixa.imposto_de_renda %>
+</p>
+
+<p>
+  <strong>Is imposto de renda fixo:</strong>
+  <%= @renda_fixa.is_imposto_de_renda_fixo %>
+</p>
+
+<%= link_to 'Edit', edit_renda_fixa_path(@renda_fixa) %> |
+<%= link_to 'Back', renda_fixas_path %>

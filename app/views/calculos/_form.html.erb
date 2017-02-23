@@ -1,0 +1,33 @@
+<%= form_for(@calculo) do |f| %>
+  <% if @calculo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@calculo.errors.count, "error") %> prohibited this calculo from being saved:</h2>
+
+      <ul>
+      <% @calculo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :valor_inicial %><br>
+    <%= f.text_field :valor_inicial %>
+  </div>
+  <div class="field">
+    <%= f.label :valor_mensal %><br>
+    <%= f.text_field :valor_mensal %>
+  </div>
+  <div class="field">
+    <%= f.label :data_de_retirada %><br>
+    <%= f.date_select :data_de_retirada %>
+  </div>
+  <div class="field">
+    <%= f.label :renda_fixa_id %><br>
+    <%= f.text_field :renda_fixa_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
