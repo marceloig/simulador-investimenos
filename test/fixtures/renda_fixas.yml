@@ -22,7 +22,7 @@ two:
   
 testePreFixado:
   titulo: Teste Pre Fixado sem Imposto de Renda
-  vencimento: 2030-02-21
+  vencimento: 2030-12-01
   taxa_de_juros: 12.0
   tipo: Teste
   imposto_de_renda: 0.0
@@ -32,10 +32,40 @@ testePreFixado:
   
 selic:
   titulo: Tesouro Selic
-  vencimento: 2030-02-21
+  vencimento: 2023-03-01
+  taxa_de_juros: 0.00
+  tipo: :Tesouro
+  imposto_de_renda: 0.0
+  has_imposto_de_renda: false
+  is_imposto_de_renda_fixo: false
+  indice: indiceSelic
+  
+selic_com_juros_e_imposto_de_renda:
+  titulo: Tesouro Selic
+  vencimento: 2023-03-01
   taxa_de_juros: 0.06
-  tipo: Tesouro
+  tipo: :Tesouro
   imposto_de_renda: 0.0
   has_imposto_de_renda: true
   is_imposto_de_renda_fixo: false
   indice: indiceSelic
+  
+cdb1ano:
+  titulo: Banco CDB
+  vencimento: 2018-04-01
+  taxa_de_juros: 80.0
+  tipo: :CDB
+  imposto_de_renda: 17.5
+  has_imposto_de_renda: false
+  is_imposto_de_renda_fixo: false
+  indice: indiceCdi
+
+cdb2ano:
+  titulo: Banco CDB
+  vencimento: 2019-04-01
+  taxa_de_juros: 120.0
+  tipo: :CDB
+  imposto_de_renda: 15.0
+  has_imposto_de_renda: false
+  is_imposto_de_renda_fixo: false
+  indice: indiceCdi

@@ -10,8 +10,12 @@ two:
   
 testeIndice:
   indexador: Indice de Teste
-  taxa_de_juros: 10.0
+  taxa_de_juros: 0.0
 
 indiceSelic:
-  indexador: Selic
-  taxa_de_juros: 13.0
+  indexador: :Selic
+  taxa_de_juros: 12.25
+  
+indiceCdi:
+  indexador: :CDI
+  taxa_de_juros: 12.13
